@@ -3,7 +3,8 @@
  "version": "1.0.0",
  "description": "Starter Kit",
  "scripts": {
-  "security": "yarn audit"
+  "security": "yarn audit",
+  "serve": "node buildScripts/srcServer.js"
  },
  "author": "Confidence Okoghenun",
  "license": "MIT",
