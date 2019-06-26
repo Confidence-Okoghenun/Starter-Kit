@@ -3,5 +3,6 @@
 Project contains
 
 1. Editor Config
-2. Npm scripts for automation
-3. Transpiling with babel
+2. Yarn scripts for automation
+3. Transpiling with Babel
+4. Bonding with Webpack
