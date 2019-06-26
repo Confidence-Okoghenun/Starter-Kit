@@ -4,7 +4,7 @@ import open from 'open';
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
 
-const port = 4000;
+const port = 4040;
 const app = express();
 const compiler = webpack(config);
 

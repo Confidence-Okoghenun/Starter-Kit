@@ -3,10 +3,13 @@
  "version": "1.0.0",
  "description": "Starter Kit",
  "scripts": {
-  "prestart": "babel-node buildScripts/startMessage.js",
-  "start": "babel-node buildScripts/srcServer.js",
+  "prestart": "node_modules/.bin/babel-node buildScripts/startMessage.js",
+  "start": "node_modules/.bin/run-p  serve lint:watch",
+  "serve": "node_modules/.bin/babel-node buildScripts/srcServer.js",
   "prepush": "git push",
-  "push": "node_modules/.bin/surge"
+  "push": "node_modules/.bin/surge",
+  "lint": "node_modules/.bin/esw webpack.config.* src buildScript --color",
+  "lint:watch": "yarn lint --watch"
  },
  "author": "Confidence Okoghenun",
  "license": "MIT",
