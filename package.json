@@ -4,12 +4,14 @@
  "description": "Starter Kit",
  "scripts": {
   "prestart": "node_modules/.bin/babel-node buildScripts/startMessage.js",
-  "start": "node_modules/.bin/run-p  serve lint:watch",
+  "start": "node_modules/.bin/run-p  serve lint:watch  test:watch",
   "serve": "node_modules/.bin/babel-node buildScripts/srcServer.js",
   "prepush": "git push",
   "push": "node_modules/.bin/surge",
   "lint": "node_modules/.bin/esw webpack.config.* src buildScript --color",
-  "lint:watch": "yarn lint --watch"
+  "lint:watch": "yarn lint --watch",
+  "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
+  "test:watch": "yarn test --watch"
  },
  "author": "Confidence Okoghenun",
  "license": "MIT",

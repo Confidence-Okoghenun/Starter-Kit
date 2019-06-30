@@ -7,3 +7,4 @@ Project contains
 3. Transpiling with Babel
 4. Bonding with Webpack
 5. Linting with EsLint
+6. Testing with Chai
