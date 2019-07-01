@@ -8,3 +8,4 @@ Project contains
 4. Bonding with Webpack
 5. Linting with EsLint
 6. Testing with Chai
+7. Continuous integration with Travis CI
