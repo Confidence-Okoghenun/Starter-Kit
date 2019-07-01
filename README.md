@@ -1,4 +1,4 @@
-# Starter-Kit
+# Starter-Kit  [![Build Status](https://travis-ci.org/Confidence-Okoghenun/Starter-Kit.svg?branch=master)](https://travis-ci.org/Confidence-Okoghenun/Starter-Kit)
 
 Project contains
 
