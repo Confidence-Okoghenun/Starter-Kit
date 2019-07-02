@@ -9,3 +9,4 @@ Project contains
 5. Linting with EsLint
 6. Testing with Chai
 7. Continuous integration with Travis CI and Appveyor
+8. HTTP requests with Fetch api
