@@ -11,3 +11,4 @@ Project contains
 7. Continuous integration with Travis CI and Appveyor
 8. HTTP requests with Fetch api
 9. Added mock api with JSON server and json-schema-faker
+10. Added code splitting and cache busting
