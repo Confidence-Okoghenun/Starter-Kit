@@ -11,7 +11,10 @@
   "lint": "node_modules/.bin/esw webpack.config.* src buildScript --color",
   "lint:watch": "yarn lint --watch",
   "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
-  "test:watch": "yarn test --watch"
+  "test:watch": "yarn test --watch",
+  "generate-mock-data": "node_modules/.bin/babel-node buildScripts/generateMockData",
+  "prestart-mockapi": "yarn generate-mock-data",
+  "start-mockapi": "node_modules/.bin/json-server --watch src/api/db.json --port 4041"
  },
  "author": "Confidence Okoghenun",
  "license": "MIT",
