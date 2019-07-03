@@ -14,7 +14,11 @@
   "test:watch": "yarn test --watch",
   "generate-mock-data": "node_modules/.bin/babel-node buildScripts/generateMockData",
   "prestart-mockapi": "yarn generate-mock-data",
-  "start-mockapi": "node_modules/.bin/json-server --watch src/api/db.json --port 4041"
+  "start-mockapi": "node_modules/.bin/json-server --watch src/api/db.json --port 4041",
+  "clean-dist": "node_modules/.bin/rimraf ./dist && mkdir dist",
+  "prebuild": "node_modules/.bin/npm-run-all clean-dist test lint",
+  "build": "node_modules/.bin/babel-node buildScripts/build.js",
+  "postbuild": "node_modules/.bin/babel-node buildScripts/distServer.js"
  },
  "author": "Confidence Okoghenun",
  "license": "MIT",
